@@ -1,0 +1,40 @@
+
+.padre-contenedor{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container {
+  position: relative;
+  width: 800px; /* Tamaño del círculo */
+  height: 800px;
+  transform-style: preserve-3d;
+  animation: spin 25s linear infinite; /* Animación de rotación */
+}
+
+.container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0 0; /* Distancia desde el centro */
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(460px); /* Posiciona las imágenes correctamente */
+}
+
+.container span img {
+  width: 350px; /* Tamaño específico */
+  height: 450px;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+  transform: translate(-50%, -50%); /* Centra las imágenes */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
