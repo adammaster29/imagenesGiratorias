@@ -29,12 +29,26 @@
   }
 
   /* **************************************btn y titulo */
-
+  .app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  p{
+font-size: 70px;
+font-weight: 700;
+color: blue;
+text-shadow:
+ 0 0 12px black,
+ 0 0 12px rgb(42, 252, 0),
+ 0 0 12px rgb(247, 211, 9);
+  }
   .btn-titulo{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
   }
 h1{
   font-size: 60px;
@@ -48,47 +62,5 @@ h1{
   30%{transform: translateY(-5px);}
   60%{transform: translateY(10px);}
   
-}
-
-/* *****************************************redes */
-.contenedor-btn-redes{
-  position: absolute;
-  z-index: 5;
-  margin-top:15rem ;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  gap: 1rem;
-  width: 500px;
-  /* border: 1px solid #000; */
-  background-image: url(/public/img/nubes.png);
- background-size: contain;
- background-repeat: no-repeat;
- background-position: center;
- animation: shadowTitulo 5s ease-in-out infinite;
-  transform-origin: bottom;
-}
-.contenedor-redes{
-z-index: 2;
-position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  width: 100%;
-  align-items: center;
-}
-.bx{
-  font-size: 60px;
-}
-.bxl-whatsapp{
-  color: rgb(9, 163, 9);
-}
-.bxl-github{
- 
-}
-.bxl-twitter{
-color: rgb(118, 198, 224);
 }
 
